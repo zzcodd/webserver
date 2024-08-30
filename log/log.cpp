@@ -5,7 +5,7 @@
 #include "log.h"
 #include <pthread.h>
 using namespace std;
-
+// zz
 Log::Log()
 {
     m_count = 0;

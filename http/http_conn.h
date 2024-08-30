@@ -26,6 +26,7 @@
 #include "../timer/lst_timer.h"
 #include "../log/log.h"
 
+// zz
 class http_conn
 {
 public:
@@ -34,6 +35,7 @@ public:
     static const int WRITE_BUFFER_SIZE = 1024;
     enum METHOD
     {
+      
         GET = 0,
         POST,
         HEAD,

@@ -1,3 +1,4 @@
+
 #include <mysql/mysql.h>
 #include <stdio.h>
 #include <string>
@@ -8,10 +9,12 @@
 #include <iostream>
 #include "sql_connection_pool.h"
 
+
 using namespace std;
 
 connection_pool::connection_pool()
 {
+  
 	m_CurConn = 0;
 	m_FreeConn = 0;
 }
@@ -39,7 +42,7 @@ void connection_pool::init(string url, string User, string PassWord, string DBNa
 
 		if (con == NULL)
 		{
-			LOG_ERROR("MySQL Error");
+			LOG_ERROR("MySQL Error !");
 			exit(1);
 		}
 		con = mysql_real_connect(con, url.c_str(), User.c_str(), PassWord.c_str(), DBName.c_str(), Port, NULL, 0);

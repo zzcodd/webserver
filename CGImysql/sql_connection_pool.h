@@ -1,3 +1,10 @@
+/*
+ * @Description: 
+ * @Author: zy
+ * @Date: 2024-08-30 11:08:53
+ * @LastEditTime: 2024-08-30 11:43:56
+ * @LastEditors: zy
+ */
 #ifndef _CONNECTION_POOL_
 #define _CONNECTION_POOL_
 
@@ -56,5 +63,6 @@ private:
 	MYSQL *conRAII;
 	connection_pool *poolRAII;
 };
+
 
 #endif
